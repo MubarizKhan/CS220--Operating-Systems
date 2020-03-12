@@ -1,0 +1,22 @@
+Q1(a):
+The pthread_create and pthread_join methods are given by the pthread
+library, the pthread create function takes four parameteres,
+the first parameter points towards the thread object, the second parameter
+is a pointer to the attributes of the thread is usually passed null, 
+the third argument is the function which the thread executes; 
+the fourth argument is the pointer to a function you need to start the
+ thread with; can be passed as null if isn't needed.
+
+Output:
+The words hello and world, each are executed 10 times; due to the functions
+thread1() & thread2(). As we don't know when each thread will execute;
+there's no order of them when they're printing. 
+
+Q2(a) 20000000
+(b) Thread 1, counter = 14156504
+Thread 0, counter = 14944538
+
+(c) The error is quite large and is inconsistent; as can be seen in the 
+screenshots.
+
+(d) It rougly takes a second or even less to run on my system.
