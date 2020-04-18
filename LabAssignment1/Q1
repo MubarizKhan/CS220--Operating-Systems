@@ -1,0 +1,68 @@
+#include<stdio.h>
+
+Is the library because we get the function printf(), scanf();
+it is used for getting input and outout
+
+#include <fcntl.h>
+
+The fcntl.h is a header file defined by the POSIX standard. It accompanies the fcntl() system call,
+On Linuxopen files are manipulated via files descriptors. Open files also have a set of associated file status flags. 
+These flags control the way in which I/O operations are performed on your file.
+file descriptor-->(In Unix and related computer operating systems, a file descriptor (FD, less frequently fildes) 
+is an abstract indicator (handle) used to access a file or other input/output resource)
+
+
+#include<stdlib.h>
+is the library which is used for memory allocation, malloc etc 
+
+
+#include <sys/types.h>
+Used for file block counts or Used for block sizes or system times in clock ticks or clock ticks per seconds
+
+#include <unistd.h>
+used a various amount f times, example null pointer edfinition, seek_set etc.
+
+
+#include <sys/stat. h>
+The <sys/stat. h> header shall define the structure of the data
+ returned by the fstat(), lstat(), and stat() functions. also used to define stat structure 
+
+
+#include <sys/dir.h>
+used for scaaning and sorting directories, 
+
+
+
+
+
+
+
+The first distinction refers to how processes are being run. 
+Normally, when you run a command/program, it is run with the privileges of your user.
+ It has the real group id same as your user's primary group. 
+ This can be changed by a process in order to perform some tasks as a member of another special group.
+ To do that, programs use the setgid function that changes their effective group id.
+
+
+
+ 
+The kernel view
+
+Conceptually, there are three sets of groups that a process is a member of. Each set is a subset of the following one.
+
+    The single group that is the process's default group, which files created by this process will belong to.
+    The set of groups that are checked when the group requires permission to open a file.
+    The set of groups that a process running with extra privileges process can draw upon.
+
+For historical reasons, these sets are respectively:
+
+    the effective group ID (egid);
+    the effective group ID plus the supplementary group IDs;
+    all of the above plus the real group ID and the saved set-group-ID.
+
+Normally, a program has a single user ID. If the executable has the setuid mode bit set, 
+then the program has two user IDs: its effective user ID is the one that matters for file permissions, per-user limits, 
+determining whether the process is running as root and so on. The process can switch between the effective and the real user IDs, if it doesn't need its extra privileges all the time, 
+or if it needs to switch between two non-root users.
+
+The same mechanism exists for group. For groups, there is an additional feature which didn't exist when the system was designed: a process can be a member of any number of groups; these are the supplementary group IDs.

@@ -1,0 +1,140 @@
+1.apropos [options] keyword
+--each manual page has a short description along with it, apropos command searches according to 
+that command and gives us the description of it.
+whatis command can also be used,but apropos gives us description of each page in the manual
+we can use the whereis commanf to see where it is located in our system.
+
+2.  grep [OPTIONS] PATTERN [FILE...]
+--print in file according to a certain pattern, it means global regular expression print, and searches
+and processes text, line by line. if no file is given it searches recursively through folders.
+
+3. fgrep [OPTIONS] PATTERN [FILE...]
+--print in file according to a certain pattern, it means global regular expression print, and searches
+and processes text, line by line. if no file is given it searches recursively through folders.
+
+Options:
+
+    -c : It is used to print only a count of the lines which contain the pattern.
+    -h : Used to display the matched lines.
+    -i : During comparisions, it will ignore upper/lower case distinction.
+    -l : Used to print the names of files with matching lines once, separated by new-lines. It will not repeat the names of files when the pattern is found more than once.
+    -n : It is used precede each line by its line number in the file (first line is 1).
+    -s : It will only display the error messages.
+    -v : Print all lines except those contain the pattern.
+    -x : Print only lines matched entirely.
+    -e pattern_list : Search for a string in pattern-list (useful when the string begins with a “-“).
+    -f pattern-file : Take the list of patterns from pattern-file.
+    pattern : Specify a pattern to be used during the search for input.
+    file : A path name of a file to be searched for the patterns. If no file operands are specified, the standard input will be used.
+
+
+
+4. chgrp [options] group file
+Suppose you want to change the group of a file 'file1' whose current group is 'himanshu'. 
+he requirement is to change the group ownership to 'root.' 
+
+5.xclock
+-- a clock pops up
+
+6. dclock
+-- a digital clock pops up.
+
+7. xterm
+xterm is the standard terminal emulator of the X Window System,
+providing a command-line interface within  a window.
+
+8.ps [options]
+short for Process Status, is a command line utility that is used to display
+ or view information related to the processes running in a Linux system.
+ ps -A/e to view all running processess
+ps -T to view all processess related to terminal
+ps -ax ( a stands for all processess & x stands for all processess that are not associated with the current tty)
+ps aux for bsd format
+
+
+9. vi [name]
+opens vi editor
+
+10. vim [name.txt]
+
+opens vi/vim editor and give name along with it.
+
+11. users
+will simply output the name of the user 
+
+12. alias command = original_command
+A shell alias is a shortcut to reference a command.
+ It can be used to avoid typing long commands or as a means to correct incorrect input
+
+13.unalias [optioon] [alias name]
+removes the alias which was previously created
+
+14.aspell check [options] filename 
+aspell command is used as a spell checker in Linux
+
+15.bg [job_spec ...]
+
+
+16. fs [command]
+fs-la
+fs is a set of commands which let you query the fileserver and set permisiions
+These commands allow you to change and list the permissions on any particular directory.
+
+17. killall
+lets you kill certain process
+
+18.dirname pathname
+Convert a full pathname to just a path.
+
+19.file name
+determines filetype
+
+20. Aptitude
+
+Linux aptitude command. aptitude is the text-based front-end for the APT package management system.
+ It allows the user to view the list of packages
+
+
+21. mount 
+    used to mount a filesystem
+
+22. umount
+    used to unmount a filesystem
+
+23. last
+shows a list of last logged i users
+
+24. ctrl + z
+Ctrl+z sends the SIGTSTP (Signal Tty SToP) signal to the foreground job.
+
+25.awk
+USED    for pattern sxanning and text processing languages
+awk -v shows version of the file
+
+26. sleep
+puts computer i nsleep mode after a small amount of time
+
+27. shutdown [time]
+shuts down pc after a after a small amount of time
+
+28. exapnd [option] filename
+converts tabs to spaces 
+
+
+30. ping 
+Ping is a computer network administration software utility 
+used to test the reachability of a host on an Internet Protocol network
+
+
+31. cmp [option] file1 dile2
+compares between file according to the options
+
+32. finger [-lmsp] [user1 user2 ….. ]
+used to check the information of any currently logged in users from the terminal. It is a command-line utility that can provide users 
+login time, tty (name), idle time, home directory, shell name, etc.
+
+33. ifconfig
+ifconfig stands for "interface configuration." 
+It is used to view and change the configuration of the network interfaces on your system.
+
+
